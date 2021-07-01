@@ -1,3 +1,5 @@
+# PyBank
+
 import os
 import csv
 
@@ -26,7 +28,7 @@ with open(budget_csv, 'r') as csvfile:
             greatest_decrease = int(row[1])
 
 print("Financial Analysis")
-print("___________________________________")
+print("_______________________________________")
 
 print(f"Total Months: {months}")
 print(f"Total: $ {total_amount}")
@@ -34,6 +36,15 @@ print(f"Average Change: $ {round(total_amount/months,2)}")
 print(f"Greatest Increase in Profits: {bm} ($ {greatest_increase})")
 print(f"Greatest Decrease in Profits:  {wm} ($ {greatest_decrease})")
 
+filename = '../Analysis/Financial_analysis.txt'
+f = open(filename, "w")
+f.write("Financial Analysis \n")
+f.write("_______________________________________ \n")
 
+f.write(f"Total Months: {months} \n")
+f.write(f"Total: $ {total_amount} \n")
+f.write(f"Average Change: $ {round(total_amount/months,2)} \n")
+f.write(f"Greatest Increase in Profits: {bm} ($ {greatest_increase}) \n")
+f.write(f"Greatest Decrease in Profits:  {wm} ($ {greatest_decrease}) \n")
 
 
