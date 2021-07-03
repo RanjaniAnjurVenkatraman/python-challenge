@@ -3,7 +3,7 @@
 import os
 import csv
 
-budget_csv = os.path.join('..','Resources','budget_data.csv')
+budget_csv = os.path.join("Resources","budget_data.csv")
 
 months = 0
 total_amount = 0
@@ -46,7 +46,7 @@ print(f"Average Change: $ {round(avg_change,2)}")
 print(f"Greatest Increase in Profits: {greatest_date} ($ {greatest_inc})")
 print(f"Greatest Decrease in Profits:  {worst_date} ($ {greatest_dec})")
 
-filename = '../Analysis/Financial_analysis.txt'
+filename = 'Analysis/Financial_analysis.txt'
 f = open(filename, "w")
 f.write("Financial Analysis \n")
 f.write("_______________________________________ \n")
