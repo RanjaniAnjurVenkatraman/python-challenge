@@ -7,10 +7,6 @@ budget_csv = os.path.join('..','Resources','budget_data.csv')
 
 months = 0
 total_amount = 0
-greatest_increase = 0
-greatest_decrease = 0
-bm = ''
-wm = ''
 change = []
 dates = []
 
