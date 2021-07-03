@@ -42,6 +42,18 @@ print("----------------------------")
 print(f"Winner : {winner}")
 print("----------------------------")
 
+filename = "Analysis/Poll_analysis.txt"
+f = open(filename,'w')
+f.write("Election Results \n")
+f.write("----------------------------\n")
+f.write(f"Total Votes : {Total_votes}\n")
+f.write("----------------------------\n")
+for i in range(len(Candidates)):
+    f.write(f"{Candidates[i]}: {Percent_votes[i]}% ({Candidate_votes[i]}) \n")  
+f.write("----------------------------\n")
+f.write(f"Winner : {winner}\n")
+f.write("----------------------------\n")
+
 
 
 
